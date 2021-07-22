@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "cd react && npm start",
-    "build": "cd react && npm build",
+    "build": "cd react && npm run build",
     "test": "cd react && npm test",
     "postinstall": "cd react && npm install",
     "lint": "npx eslint .",
