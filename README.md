@@ -1,6 +1,6 @@
 # Mega JS learning project
 
-I will use this project to learn and experiment with various parts of the modern JS environment. 
+I will use this project to learn and experiment with various parts of the modern JS environment.
 This project is based on the [modern frontend roadmap](https://roadmap.sh/frontend).
 
 ## What I will do
@@ -20,10 +20,12 @@ There will also be an admin page where administrators can add or remove airplane
 ## What I will use
 
 ### Backend
+
 - Node
 - Graphql (Apollo?)
 
 ### Frontend
+
 - React
 - Angular
 - Vue
@@ -31,13 +33,16 @@ There will also be an admin page where administrators can add or remove airplane
 - Sass
 
 ### Both backend and frontend
+
 - Socket.io
 - Webpack?
 
 ### Linters and formatters
+
 - ESLint
 - Prettier
 
 ### Testing
+
 - Jest
 - Cypress

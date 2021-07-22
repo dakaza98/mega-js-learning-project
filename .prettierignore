@@ -1,3 +1,2 @@
 build
-*.json
-*.md
+package-lock.json
