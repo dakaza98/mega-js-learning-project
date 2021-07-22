@@ -1,0 +1,12 @@
+{
+    "name": "airplane-spotting",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "start": "cd react && npm start",
+        "build": "cd react && npm build",
+        "test": "cd react && npm test",
+        "postinstall": "cd react && npm install"
+    }
+}
+  
