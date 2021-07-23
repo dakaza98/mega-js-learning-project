@@ -1,9 +1,20 @@
-import c172Skyhawk from "../images/cessna-172-skyhawk.jpg";
+import "../styles/card.scss";
 
-function Card() {
+function Card({ name, imageUrl, totalTimesSeen }) {
   return (
     <div className="card">
-      <img src={c172Skyhawk} alt="Cessna 172 Skyhawk" />
+      <img src={imageUrl} alt="{name}" />
+      <div className="card-details">
+        <p className="airplane-name">{name}</p>
+        <div className="total-times-container">
+          <p>Total times seen: </p>
+          <div className="total-times-incrementer">
+            <button>-</button>
+            <p>{totalTimesSeen}</p>
+            <button>+</button>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

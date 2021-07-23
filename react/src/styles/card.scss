@@ -1,0 +1,29 @@
+.card {
+  border: 1px solid #eaeaea;
+  -webkit-box-shadow: 4px 4px 10px 4px #efefef;
+  box-shadow: 4px 4px 10px 4px #efefef;
+  .airplane-name {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .card-details {
+    padding: 1rem;
+  }
+
+  .total-times-container {
+    display: flex;
+    align-items: center;
+
+    :first-child {
+      flex: 1;
+    }
+
+    .total-times-incrementer {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      font-size: 1.5rem;
+    }
+  }
+}
