@@ -23,7 +23,7 @@ class Card extends React.Component {
   render() {
     return (
       <div className="card">
-        <img src={this.imageUrl} alt="{this.name}" />
+        <img src={this.imageUrl} alt={this.name} />
         <div className="card-details">
           <p className="airplane-name">{this.name}</p>
           <div className="total-times-container">

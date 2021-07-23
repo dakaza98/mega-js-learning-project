@@ -2,28 +2,40 @@
   border: 1px solid #eaeaea;
   -webkit-box-shadow: 4px 4px 10px 4px #efefef;
   box-shadow: 4px 4px 10px 4px #efefef;
-  .airplane-name {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-  }
+  display: flex;
+  flex-direction: column;
 
   .card-details {
     padding: 1rem;
-  }
-
-  .total-times-container {
+    flex: 1;
     display: flex;
-    align-items: center;
+    flex-direction: column;
 
-    :first-child {
+    .airplane-name {
+      font-size: 1.5rem;
       flex: 1;
     }
 
-    .total-times-incrementer {
+    .total-times-container {
       display: flex;
       align-items: center;
-      gap: 1rem;
-      font-size: 1.5rem;
+
+      :first-child {
+        flex: 1;
+      }
+
+      .total-times-incrementer {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        font-size: 1.5rem;
+      }
     }
+  }
+
+  img {
+    height: 12.5rem;
+    object-fit: cover;
+    width: 100%;
   }
 }
