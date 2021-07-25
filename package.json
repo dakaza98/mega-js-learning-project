@@ -2,8 +2,10 @@
   "name": "airplane-spotting",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "start": "cd react && npm start",
+    "start:server": "cd server && nodemon app.js",
     "build": "cd react && npm run build",
     "test": "cd react && npm test",
     "postinstall": "cd react && npm install",
@@ -23,6 +25,9 @@
     "prettier": "^2.3.2"
   },
   "dependencies": {
+    "apollo-server-express": "^3.0.2",
+    "express": "^4.17.1",
+    "graphql": "^15.5.1",
     "sass": "^1.35.2",
     "scss-reset": "^1.2.0"
   }
