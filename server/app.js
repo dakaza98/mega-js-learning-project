@@ -1,5 +1,6 @@
-import { ApolloServer, gql } from "apollo-server-express";
+import { ApolloServer } from "apollo-server-express";
 import express from "express";
+import { Book, Query } from "./schema.js";
 
 async function startApolloServer(typeDefs, resolvers) {
     const server = new ApolloServer({ typeDefs, resolvers });
@@ -12,16 +13,6 @@ async function startApolloServer(typeDefs, resolvers) {
         `🚀 Server ready at http://localhost:4000${server.graphqlPath}`
     );
 }
-
-const typeDefs = gql`
-    type Book {
-        title: String
-    }
-
-    type Query {
-        books: [Book]
-    }
-`;
 
 const books = [
     {
@@ -38,4 +29,4 @@ const resolvers = {
     },
 };
 
-startApolloServer(typeDefs, resolvers);
+startApolloServer([Book, Query], resolvers);
